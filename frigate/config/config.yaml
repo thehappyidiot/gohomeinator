@@ -23,6 +23,8 @@ cameras:     # No cameras defined, UI wizard should be used
     onvif:
       host: 192.168.1.11
       port: 8000
+      user: admin
+      password: {FRIGATE_RTSP_PASSWORD}
 version: 0.17-0
 go2rtc:
   streams:
