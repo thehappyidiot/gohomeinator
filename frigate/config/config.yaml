@@ -6,7 +6,7 @@ cameras:     # No cameras defined, UI wizard should be used
     enabled: true
     ffmpeg:
       inputs:
-        - path: rtsp://admin:KN*bLz&I7leUL9$@192.168.1.11:554/Preview_01_main
+        - path: rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.1.11:554/Preview_01_main
           roles:
             - record
             - audio
@@ -25,9 +25,9 @@ version: 0.17-0
 go2rtc:
   streams:
     rattycam_1:
-      - rtsp://admin:KN*bLz&I7leUL9$@192.168.1.11:554/Preview_01_main
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.1.11:554/Preview_01_main
     rattycam_2:
-      - rtsp://admin:KN*bLz&I7leUL9$@192.168.1.11:554/Preview_01_sub
+      - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.1.11:554/Preview_01_sub
 record:
   enabled: True
   continuous:
