@@ -1,0 +1,5 @@
+streams:
+  rattycam_2:
+    - rtsp://admin:8MRKHVNXffv!!@192.168.1.11:554/Preview_01_sub
+  rattycam_1:
+    - rtsp://admin:8MRKHVNXffv!!@192.168.1.11:554/Preview_01_main

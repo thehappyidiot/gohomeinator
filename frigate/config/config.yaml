@@ -14,13 +14,10 @@ cameras:     # No cameras defined, UI wizard should be used
           input_args: preset-rtsp-restream
           roles:
             - detect
-      hwaccel_args: preset-vaapi
     live:
       streams:
         Stream 1: rattycam_1
         Stream 2: rattycam_2
-    record:
-      enabled: True     
 version: 0.17-0
 go2rtc:
   streams:
@@ -28,7 +25,3 @@ go2rtc:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.1.11:554/Preview_01_main
     rattycam_2:
       - rtsp://admin:{FRIGATE_RTSP_PASSWORD}@192.168.1.11:554/Preview_01_sub
-record:
-  enabled: True
-  continuous:
-    days: 7
